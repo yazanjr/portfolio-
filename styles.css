@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --darkbule: #06141B;
+    --midblue:#11212D;
+    --blu:#253745;
+    --background:#CCD0CF;
+    --backgroundsd:#9BA8AB;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Poppins';
+    font-size: x-large;
+    margin: 0%;
+    color: #06141B;
+}
+
+.nav{
+    width: 100%;
+    background-color:var(--blu);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--background);
+    font-weight: 200;
+}
+
+.navHeader{
+    font-weight: 300;
+    margin-left: 1rem;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.button{
+    background-color: var(--darkbule);
+    padding: 0.75rem;
+    color: var(--background);
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.buttonsd{
+    color: var(--darkbule);
+    padding: 0.75rem;
+    background-color: var(--background);
+    margin-right: 1rem;
+    border-radius: 10px;
+    border: 3px solid var(--darkbule);
+}
+
+a{
+    color: var(--background);
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero{
+    display: flex;
+    justify-content: start;
+    margin: 4rem 10rem;
+    gap: 20rem;
+}
+
+.herotxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+}
+
+.heroImg{
+    width: 30%;
+    height: 30%;
+    border: 10px solid var(--midblue);
+    border-radius: 30px;
+}
+
+.heroButtons{
+    padding-top: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+hr{
+    width: 80%;
+    background-color: var(--darkbule);
+    height: 2px;
+    border-radius: 30px;
+    border: none;
+}
+
+.about{
+    margin: 4rem 10rem;
+}
+
+.about h1{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.aboutTxt{
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.time{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.item{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: var(--backgroundsd);
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.item h3{
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.item h4{
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.item p{
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.circle{
+    min-width: 20px;
+    height: 20px;
+    border: 5px solid var(--darkbule);
+    border-radius: 50%;
+    background-color: var(--background);
+    margin-top: 0.2rem;
+}
+
+.education{
+    margin: 4rem 10rem;
+}
+
+.education h1{
+    margin: .5rem 0;
+    font-size: 2.5rem;
+}
+
+.education h3{
+    margin-bottom: .2rem;
+    font-weight: 500;
+}
+
+.skills{
+    margin: 4rem 10rem;
+}
+
+.skills h1{
+    margin: .5rem 0 3rem;
+    font-size: 2.5rem;
+}
+
+.skillCards{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.skillCard{
+    background-color: var(--backgroundsd);
+    border-top: 8px solid var(--midblue);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.skillCard h2{
+    margin-top: 0;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    margin-top: 2rem;
+}
+
+.tags span{
+    border: 1px solid var(--blu);
+    border-radius: 30px;
+    padding: .3rem 1rem;
+    font-size: 1rem;
+}
+
+.projects{
+    margin: 4rem 10rem;
+}
+
+.projects h1{
+    margin: .5rem 0 3rem;
+    font-size: 2.5rem;
+}
+
+.projectCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.projectCard{
+    background-color: var(--backgroundsd);
+    border-top: 8px solid var(--midblue);
+    border-radius: 20px;
+    padding: 1.5rem;
+    transition: .3s;
+}
+
+.projectCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(6, 20, 27, .25);
+}
+
+.projectImg{
+    height: 180px;
+    background-color: var(--background);
+    border: 2px dashed var(--blu);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.projectCard h2{
+    margin-bottom: .8rem;
+}
+
+.projectCard h3{
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.projectCard p{
+    font-size: 1rem;
+}
+
+.tools{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.projectCard .button{
+    display: inline-block;
+    margin: 0;
+}
+
+.footer{
+    margin-top: 5rem;
+    background-color: var(--darkbule);
+    color: var(--background);
+    padding: 5rem 10rem 2rem;
+}
+
+.footer h2,
+.footer h3{
+    margin-top: 0;
+    color: white;
+}
+
+.footer p{
+    color: #bfc8ca;
+    line-height: 1.7;
+}
+
+.footer a{
+    color: #bfc8ca;
+    transition: .3s;
+}
+
+.footer a:hover{
+    color: white;
+}
+
+.footerTop{
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.footerTop div{
+    flex: 1;
+}
+
+.footerLinks{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.footer hr{
+    margin: 3rem 0 2rem;
+    width: 100%;
+    background-color: rgba(255,255,255,.15);
+}
+
+.footerCopy{
+    text-align: center;
+    color: #9BA8AB;
+    font-size: .9rem;
+}
+
+@media (max-width:1024px){
+
+    body{
+        font-size: 1.1rem;
+    }
+
+    .nav{
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+    }
+
+    .hero{
+        margin: 3rem;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .heroImg{
+        width: 40%;
+        height: auto;
+    }
+
+    .herotxt h1{
+        font-size: 3.5rem !important;
+    }
+
+    .heroButtons{
+        padding-top: 2rem;
+    }
+
+    .about,
+    .education,
+    .skills,
+    .projects{
+        margin: 3rem;
+    }
+
+    .skillCards,
+    .projectCards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .time{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer{
+        padding: 4rem 3rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    body{
+        font-size: 1rem;
+    }
+
+    .nav{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .navLinks{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav .button{
+        margin: 0;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin: 2rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .heroImg{
+        width: 70%;
+        height: auto;
+    }
+
+    .herotxt h1{
+        font-size: 2.8rem !important;
+    }
+
+    .heroButtons{
+        padding-top: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .heroButtons a{
+        width: 220px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .about,
+    .education,
+    .skills,
+    .projects{
+        margin: 2rem 1.5rem;
+    }
+
+    .about h1,
+    .education h1,
+    .skills h1,
+    .projects h1{
+        font-size: 2rem;
+    }
+
+    .aboutTxt{
+        width: 100%;
+    }
+
+    .time,
+    .skillCards,
+    .projectCards{
+        grid-template-columns: 1fr;
+    }
+
+    .item,
+    .skillCard,
+    .projectCard{
+        padding: 1.2rem;
+    }
+
+    .tags span{
+        font-size: .9rem;
+    }
+
+    .footer{
+        padding: 3rem 1.5rem 2rem;
+    }
+
+    .footerTop{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footerLinks{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width:480px){
+
+    .navLinks{
+        flex-direction: column;
+    }
+
+    .hero{
+        margin: 1.5rem 1rem;
+    }
+
+    .heroImg{
+        width: 85%;
+    }
+
+    .herotxt h1{
+        font-size: 2.2rem !important;
+    }
+
+    .heroButtons{
+        width: 100%;
+    }
+
+    .heroButtons a{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about,
+    .education,
+    .skills,
+    .projects{
+        margin: 1.5rem 1rem;
+    }
+
+    .projectCard .button{
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .footer{
+        padding: 2.5rem 1rem 1.5rem;
+    }
+}

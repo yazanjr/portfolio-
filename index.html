@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="nav">
+        <h3 class="navHeader">YJR</h3>
+        <ul class="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+        </ul>
+        <a class="button" href="#Contact">Contact</a>
+    </header>
+
+    <div class="hero" id="home">
+        <div class="herotxt">
+            <h1 style="font-size: 5rem; font-weight: 200; margin: 0px;">Yazan Jaber</h1>
+            <h3>Backend & AI developer </h3>
+            <p>Building the future with purpose,<br> one intelligent system at a time.</p>
+            <div class="heroButtons">
+                <a class="button" href="#projects">View my work</a>
+                <a class="buttonsd" href="#Contact">Contact</a>
+            </div>
+        </div>
+
+        <img src="me.jpeg" class="heroImg"/>
+    </div>
+
+    <hr>
+
+    <section class="about" id="about">
+        <p>Get to Know Me</p>
+        <h1>Professional Journey</h1>
+
+        <p class="aboutTxt">
+            I believe technical knowledge, especially in areas like AI, is one of the
+            most valuable tools a person can build for themselves and their community.
+            That belief, combined with a strong instinct for problem solving, is what
+            drew me into this field — and what has shaped the path below.
+        </p>
+
+        <div class="time" id="experience">
+            <div class="item">
+                <div class="circle"></div>
+                <div>
+                    <h3>2021</h3>
+                    <h4>B.Sc. Computer Science, University of Jordan</h4>
+                    <p>Began my degree with a focus on AI, and took on a peer instruction role.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="circle"></div>
+                <div>
+                    <h3>2023</h3>
+                    <h4>Elected Student Union Representative</h4>
+                    <p>Represented IT College students and bridged student needs with academic decisions.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="circle"></div>
+                <div>
+                    <h3>2024</h3>
+                    <h4>Course Instructor & Workshop Facilitator</h4>
+                    <p>Delivered technical training in programming and backend development.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="circle"></div>
+                <div>
+                    <h3>2025</h3>
+                    <h4>Business Analyst & Software Engineer Intern, inCube</h4>
+                    <p>Worked on structured technical training and software development tasks.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="circle"></div>
+                <div>
+                    <h3>2025</h3>
+                    <h4>Freelance Software Developer</h4>
+                    <p>Built websites and systems for different businesses based on their needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="education">
+        <p>Education</p>
+        <h1>University of Jordan</h1>
+        <h3>B.Sc. Computer Science</h3>
+        <p>2021 - 2026 · Amman, Jordan · Grade: Very Good</p>
+    </section>
+
+    <hr>
+
+    <div class="skillCards">
+
+    <div class="skillCard">
+        <h2><i class="fa-solid fa-server"></i> Backend</h2>
+
+        <div class="tags">
+            <span><i class="fa-brands fa-java"></i> Java</span>
+            <span><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+            <span><i class="fa-solid fa-cloud"></i> Spring Cloud</span>
+            <span><i class="fa-brands fa-python"></i> FastAPI</span>
+            <span><i class="fa-brands fa-python"></i> Python</span>
+            <span><i class="fa-solid fa-cubes"></i> Microservices</span>
+            <span><i class="fa-solid fa-database"></i> PostgreSQL</span>
+            <span><i class="fa-solid fa-database"></i> MongoDB</span>
+            <span><i class="fa-solid fa-layer-group"></i> ChromaDB</span>
+        </div>
+    </div>
+
+    <div class="skillCard">
+        <h2><i class="fa-solid fa-code"></i> Frontend & Tools</h2>
+
+        <div class="tags">
+            <span><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span><i class="fa-brands fa-react"></i> React</span>
+            <span><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span><i class="fa-brands fa-github"></i> GitHub</span>
+            <span><i class="fa-brands fa-docker"></i> Docker</span>
+            <span><i class="fa-solid fa-code-branch"></i> REST APIs</span>
+        </div>
+    </div>
+
+    <div class="skillCard">
+        <h2><i class="fa-solid fa-brain"></i> AI & Machine Learning</h2>
+
+        <div class="tags">
+            <span><i class="fa-solid fa-link"></i> LangChain</span>
+            <span><i class="fa-solid fa-face-smile"></i> Hugging Face</span>
+            <span><i class="fa-solid fa-robot"></i> RAG Pipelines</span>
+            <span><i class="fa-solid fa-database"></i> Vector Databases</span>
+            <span><i class="fa-solid fa-wand-magic-sparkles"></i> Gemini API</span>
+        </div>
+    </div>
+
+</div>
+
+    <hr>
+
+    <section class="projects" id="projects">
+        <p>Selected Work</p>
+        <h1>Projects</h1>
+
+        <div class="projectCards">
+            <div class="projectCard">
+
+                <h2>AI Document Q&A API</h2>
+                <p>A REST API that lets users upload documents and query them in natural language using Retrieval-Augmented Generation.</p>
+                <h3>Problem → Solution</h3>
+                <p>Manually searching long documents is slow. Built a RAG pipeline that embeds document chunks and retrieves relevant context before generating direct, accurate answers.</p>
+                <p class="tools">Python · FastAPI · LangChain · ChromaDB · Gemini API</p>
+                <a class="button" href="https://github.com/yazanjr/rag-document-qa-api">View on GitHub</a>
+            </div>
+
+            <div class="projectCard">
+    <h2>Real Estate Agency Website</h2>
+
+    <p>Developed a modern landing page for a real estate agency as part of a five-member freelance team.</p>
+
+    <h3>Problem → Solution</h3>
+
+    <p>The client needed a professional online presence to showcase properties and generate leads. Collaborated with a team of freelancers to build a responsive, high-performance landing page focused on user experience and lead conversion.</p>
+
+    <p class="tools">React · ExpresJs · MongoDB · Git</p>
+
+    <a class="button" href="https://github.com/yazanjr/joLand-MARN-stack">View on GitHub</a>
+</div>
+
+            <div class="projectCard">
+                <h2>Full-Stack Blog Platform</h2>
+                <p>A complete blogging platform with secure authentication and role-based access.</p>
+                <h3>Problem → Solution</h3>
+                <p>Simple blog builds often skip proper access control. Implemented JWT-based auth with role-based access, backed by full unit and integration test coverage.</p>
+                <p class="tools">Java · Spring Boot · PostgreSQL · JUnit</p>
+                <a class="button" href="https://github.com/yazanjr/Blog-APISpring-Boot-">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="Contact">
+        <div class="footerTop">
+            <div>
+                <h2>Yazan Jaber</h2>
+                <p>Backend & AI Developer passionate about building scalable software and intelligent systems that solve real-world problems.</p>
+            </div>
+
+            <div class="footerLinks">
+                <div>
+                    <h3>Email</h3>
+                    <a href="mailto:yazaniyadj03@gmail.com">yazaniyadj03@gmail.com</a>
+                </div>
+
+                <div>
+                    <h3>Phone</h3>
+                    <a href="tel:+962796804555">+962 79 680 4555</a>
+                </div>
+
+                <div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/yazanjr/" target="_blank">github.com/yazanjr</a>
+                </div>
+
+                <div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/yazan-jaber03/" target="_blank">linkedin.com/in/yazan-jaber03</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="footerCopy">© 2026 Yazan Jaber. Designed & Developed by Yazan Jaber.</p>
+    </footer>
+</body>
+</html>
